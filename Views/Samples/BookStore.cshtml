@@ -1,0 +1,22 @@
+@model BookStoreViewModel
+
+
+
+<div>
+    <h3>@Model.StoreName
+</div>
+<div>
+    @foreach(var book in @Model.Books)
+    {
+        <div>@book.Title</div>
+    }
+    </div>
+
+<!--
+    A store title
+    A list of books
+        Title
+        Author
+        price
+        
+ --> 

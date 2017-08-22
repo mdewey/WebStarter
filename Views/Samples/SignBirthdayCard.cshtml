@@ -1,0 +1,15 @@
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+@if (ViewData["lastSig"] != null)
+{
+    <h4>Thank for adding you name, @ViewData["lastSig"] </h4>
+}
+
+<form asp-controller="Samples" asp-action="SignBirthdayCard" method="post">
+    <input type="text" name="signature" id="">
+    <button type="submit">Sign card</button>
+</form>
